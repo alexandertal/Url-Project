@@ -1,0 +1,6 @@
+<h1>Urls</h1>
+
+<% @urls.each do |u| %>
+<button>
+<%= link_to "#{u.id}", u.name %> </button>
+<% end  %>

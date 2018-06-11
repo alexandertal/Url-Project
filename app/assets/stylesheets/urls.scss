@@ -1,0 +1,27 @@
+// Place all the styles related to the Urls controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  text-align: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-radius: 70px;
+  outline: none;
+
+}
+
+body {
+  margin-top: 10em;
+  background-image: url('wall2.jpeg');
+}
+
+button {
+  color: red;
+  background-color: blue;
+}
+
+p {
+  color: #12b4ffab;
+  font-size: 50px;
+}
