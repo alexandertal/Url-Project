@@ -10,6 +10,7 @@ class UrlsController < ApplicationController
 
   def create
     @url = Url.new(url_params)
+    @url.short_url = SecureRandom.hex(6)   
     @url.save
     redirect_to urls_path
   end
