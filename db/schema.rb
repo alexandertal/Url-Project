@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_25_184620) do
+ActiveRecord::Schema.define(version: 2018_06_25_192554) do
 
   create_table "shortened_urls", force: :cascade do |t|
     t.integer "owner_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2018_06_25_184620) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "short_url"
+    t.string "long_url"
   end
 
 end
