@@ -1,7 +1,8 @@
 <h1>Urls</h1>
 
 <% @urls.each do |u| %>
-<button>
-   
-<%= link_to "#{u.short_url}", u.name %> </button>
+<button><%= link_to u.short_url, u.name %> </button>
 <% end  %>
+
+
+<%= console %>

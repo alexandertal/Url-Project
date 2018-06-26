@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :urls
   root 'urls#new'
-  get 'urls/new'
-  get '/:id' => 'urls#index'
+  get '/urls' => 'urls#index'
+  get '/:id' => 'urls#show'
+  resources :urls
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

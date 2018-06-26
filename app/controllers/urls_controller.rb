@@ -2,11 +2,15 @@ class UrlsController < ApplicationController
 
   def index
     @urls = Url.all
+  end
+
+  def show
     if params[:id].present?
-    @url = Url.where(:short_url => params[:id]).last
-    redirect_to @url.long_url
+      @url = Url.find_by(short_url: params[:id])
+      redirect_to @url.name
     end
   end
+
 
   def new
     @url = Url.new
@@ -27,6 +31,7 @@ class UrlsController < ApplicationController
   end
 
   private
+
   def url_params
     params.require(:url).permit(:name)
   end
