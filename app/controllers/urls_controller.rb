@@ -5,8 +5,8 @@ class UrlsController < ApplicationController
   end
 
   def show
-    if params[:id].present?
-      @url = Url.find_by(short_url: params[:id])
+    if params[:short_url].present?
+      @url = Url.find_by(short_url: params[:short_url])
       redirect_to @url.name
     end
   end
